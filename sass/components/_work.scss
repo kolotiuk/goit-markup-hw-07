@@ -1,0 +1,31 @@
+/* Work */
+.section.section-work {
+    padding-top: 0;
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.work-item {
+    margin: 15px;
+}
+.work-link {
+    position: relative;
+    display: inline-block;
+}
+.work-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 70px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    background-color: rgba(47, 48, 58, 0.8);
+}

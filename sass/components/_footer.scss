@@ -1,0 +1,110 @@
+/* Footer */
+.footer {
+    padding: 60px 0;
+
+    background-color: $bg-color;
+}
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    line-height: 1.19;
+
+    color: $primary-white-color;
+}
+.footer-address {
+    margin-right: 70px;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+}
+.footer-text {
+    margin-bottom: 9px;
+
+    color: $primary-white-color;
+    line-height: 1.71;
+}
+.footer-link {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms $cubic-bezier;
+}
+.footer-link:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-link:hover,
+.footer-link:focus {
+    color: $blue-color;
+}
+
+.footer-social {
+    margin-right: 93px;
+}
+.footer-social .text {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+    color: $primary-white-color;
+}
+.footer .social-links {
+    display: flex;
+}
+.footer .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .social-link:hover,
+.footer .social-link:focus {
+    background-color: $blue-color;
+}
+.footer .icon {
+    fill: $primary-white-color;
+}
+
+.footer-subscription {
+    display: flex;
+}
+.footer-subscription .form {
+    color: $primary-white-color;
+}
+.footer-subscription .label {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-subscription .input {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding: 15px 0 15px 16px;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.footer-subscription .input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-subscription .button-subscribe {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-subscription .icon {
+    margin-left: 10px;
+}
