@@ -4,14 +4,14 @@
     flex-wrap: wrap;
     margin: -15px;
 }
-.project-item {
+.project__item {
     width: 370px;
     margin: 15px;
 
     background-color: #ffffff;
     border: 1px solid #eeeeee;
 }
-.project-link {
+.project__link {
     display: block;
     padding-bottom: 20px;
 
@@ -22,7 +22,7 @@
     margin-bottom: 20px;
     overflow: hidden;
 }
-.overlay-text {
+.overlay__text {
     position: absolute;
     top: 0;
     padding: 63px 24px;
@@ -31,7 +31,7 @@
     line-height: 1.55;
     color: $primary-white-color;
 }
-.overlay-block {
+.overlay__block {
     display: inline-block;
     content: "";
     position: absolute;
@@ -47,23 +47,23 @@
     transition: opacity 250ms $cubic-bezier,
         transform 250ms $cubic-bezier;
 }
-.project-link:hover .overlay-block,
-.project-link:focus .overlay-block {
+.project__link:hover .overlay__block,
+.project__link:focus .overlay__block {
     opacity: 1;
     transform: translateY(0);
 }
-.project-link:hover,
-.project-link:focus {
+.project__link:hover,
+.project__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-img {
+.overlay__img {
     width: 100%;
 }
-.project-about {
+.project__about {
     padding-left: 24px;
 }
-.project-title {
+.project__title {
     margin-bottom: 4px;
 
     font-size: 18px;
@@ -71,7 +71,7 @@
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.project-text {
+.project__text {
     font-size: 16px;
     line-height: 1.87;
     color: $primary-text-color;

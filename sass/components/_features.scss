@@ -1,20 +1,20 @@
 /* Features */
-.features-list {
+.features__list {
     display: flex;
     flex-wrap: wrap;
     margin: -20px;
 }
-.features-item {
+.features__item {
     width: 270px;
     margin: 20px;
 }
-.features-icon {
+.features__icon {
     padding: 25px 100px;
     margin-bottom: 30px;
 
     background-color: $secondary-bg-color;
 }
-.features-title {
+.features__title {
     margin-bottom: 10px;
 
     font-size: 14px;
@@ -22,12 +22,12 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-.features-text {
+.features__text {
     line-height: 1.71;
     color: $primary-text-color;
 }
 
-.section-title {
+.section__title {
     margin-bottom: 50px;
 
     font-size: 36px;

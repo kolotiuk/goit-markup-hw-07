@@ -1,5 +1,5 @@
 /* Team */
-.section-team {
+.section__team {
     background-color: $secondary-bg-color;
 }
 .team {
@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     margin: -15px;
 }
-.team-item {
+.team__item {
     width: 270px;
     margin: 15px;
     padding-bottom: 30px;
@@ -18,14 +18,14 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-title {
+.team__title {
     margin-top: 30px;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
-.team-text {
+.team__text {
     margin-top: 10px;
 
     color: $primary-text-color;
@@ -38,7 +38,7 @@
     justify-content: center;
     margin-top: 16px;
 }
-.social-link {
+.social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,22 +48,21 @@
 
     transition: background-color 250ms;
 }
-.social-link:not(:last-child),
-.footer .item:not(:last-child) {
+.social__item:not(:last-child) {
     margin-right: 10px;
 }
-.social-link .icon {
+.social__icon {
     width: 20px;
     height: 20px;
     fill: $grey-icon-color;
 
     transition: fill 250ms $cubic-bezier;
 }
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
     background-color: $blue-color;
 }
-.social-link:hover .icon,
-.social-link:focus .icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
     fill: $primary-white-color;
 }

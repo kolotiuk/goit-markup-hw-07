@@ -1,5 +1,5 @@
 /* Work */
-.section.section-work {
+.section__work {
     padding-top: 0;
 }
 .work {
@@ -7,14 +7,14 @@
     flex-wrap: wrap;
     margin: -15px;
 }
-.work-item {
+.work__item {
     margin: 15px;
 }
-.work-link {
+.work__link {
     position: relative;
     display: inline-block;
 }
-.work-label {
+.work__label {
     position: absolute;
     bottom: 0;
     left: 0;

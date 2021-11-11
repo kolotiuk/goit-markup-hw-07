@@ -1,13 +1,14 @@
 /* Clients */
-.clients-logo {
+.clients__logo {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
 }
-.clients-item {
+.clients__item {
     margin: 15px;
 }
-.clients-logo .link {
+.clients__logo .clients__link {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 170px;
@@ -17,20 +18,20 @@
     border: 1px solid $grey-icon-color;
     border-radius: 4px;
 }
-.clients-logo .link .icon {
+.clients__logo .clients__link .icon {
     transition: fill 250ms $cubic-bezier;
 }
-.clients-logo .link {
+.clients__logo .clients__link {
     transition: border-color 250ms $cubic-bezier;
 }
-.clients-logo .link:hover,
-.clients-logo .link:focus {
+.clients__logo .clients__link:hover,
+.clients__logo .clients__link:focus {
     border-color: $blue-color;
 }
-.clients-item .icon {
+.clients__item .icon {
     fill: currentColor;
 }
-.clients-logo .link:hover .icon,
-.clients-logo .link:focus .icon {
+.clients__logo .clients__link:hover .icon,
+.clients__logo .clients__link:focus .icon {
     fill: $blue-color;
 }

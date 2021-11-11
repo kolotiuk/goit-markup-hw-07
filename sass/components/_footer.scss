@@ -17,39 +17,41 @@
 
     color: $primary-white-color;
 }
-.footer-address {
+.footer__left {
     margin-right: 70px;
 }
-.address {
+.footer__address {
     display: flex;
     flex-direction: column;
 
     font-style: normal;
 }
-.footer-text {
+.address__text {
     margin-bottom: 9px;
 
     color: $primary-white-color;
     line-height: 1.71;
 }
-.footer-link {
+.address__link {
+    width: max-content;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 
     transition: color 250ms $cubic-bezier;
+
 }
-.footer-link:not(:last-child) {
+.address__link:not(:last-child) {
     margin-bottom: 9px;
 }
-.footer-link:hover,
-.footer-link:focus {
+.address__link:hover,
+.address__link:focus {
     color: $blue-color;
 }
 
-.footer-social {
+.footer__social {
     margin-right: 93px;
 }
-.footer-social .text {
+.footer__social .text {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -57,34 +59,34 @@
     text-transform: uppercase;
     color: $primary-white-color;
 }
-.footer .social-links {
+.social__links {
     display: flex;
 }
-.footer .social-link {
+.social__link {
     background-color: rgba(255, 255, 255, 0.1);
 }
-.footer .social-link:hover,
-.footer .social-link:focus {
+.social__link:hover,
+.social__link:focus {
     background-color: $blue-color;
 }
-.footer .icon {
+.footer .social__icon {
     fill: $primary-white-color;
 }
 
-.footer-subscription {
+.footer__right {
     display: flex;
 }
-.footer-subscription .form {
+.footer__form {
     color: $primary-white-color;
 }
-.footer-subscription .label {
+.footer__label {
     display: block;
     margin-bottom: 20px;
 
     font-weight: 700;
     text-transform: uppercase;
 }
-.footer-subscription .input {
+.footer__input {
     margin-right: 12px;
     width: 358px;
     height: 50px;
@@ -95,16 +97,16 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
-.footer-subscription .input::placeholder {
+.footer__input::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-subscription .button-subscribe {
+.footer__subscribe {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
-.footer-subscription .icon {
+.footer__right .icon {
     margin-left: 10px;
 }
