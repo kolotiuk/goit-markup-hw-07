@@ -47,9 +47,18 @@
     border-radius: 50%;
 
     transition: background-color 250ms;
+    &:hover,
+    &:focus {
+        background-color: $blue-color;
+        .social__icon {
+            fill: $primary-white-color;
+        }
+    }
 }
-.social__item:not(:last-child) {
-    margin-right: 10px;
+.social__item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 .social__icon {
     width: 20px;
@@ -57,12 +66,4 @@
     fill: $grey-icon-color;
 
     transition: fill 250ms $cubic-bezier;
-}
-.social__link:hover,
-.social__link:focus {
-    background-color: $blue-color;
-}
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-    fill: $primary-white-color;
 }

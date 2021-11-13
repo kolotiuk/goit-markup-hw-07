@@ -9,13 +9,15 @@
     opacity: 1;
     transition: opacity 250ms $cubic-bezier;
 }
-.backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
+.backdrop {
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        .modal {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+    }
 }
 .modal {
     position: absolute;
@@ -48,10 +50,10 @@
     border-radius: 50%;
 
     transition: fill 250ms $cubic-bezier;
-}
-.close__button:hover,
-.close__button:focus {
-    fill: $blue-color;
+    &:hover,
+    &:focus {
+        fill: $blue-color;
+    }
 }
 .modal__title {
     margin-bottom: 12px;
@@ -96,10 +98,12 @@
     resize: none;
 }
 
-.form__input:focus,
-.form__comment:focus {
-    border: 1px solid $blue-color;
-    outline: none;
+.form__input,
+.form__comment {
+    &:focus {
+        border: 1px solid $blue-color;
+        outline: none;
+    }
 }
 .form__input:focus + .form__icon {
     fill: $blue-color;
@@ -155,7 +159,9 @@
     font-size: 14px;
     line-height: 1.71;
 }
-.checkbox__label a {
-    color: $blue-color;
-    text-decoration: underline;
+.checkbox__label { 
+    a {
+        color: $blue-color;
+        text-decoration: underline;
+    }
 }

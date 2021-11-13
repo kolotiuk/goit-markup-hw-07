@@ -72,6 +72,11 @@ ul {
 
     transition: background-color 250ms $cubic-bezier;
 }
-.button--primary:hover {
-    background-color: $blue-color-hover;
+.button--primary {
+    &:hover {
+        background-color: $blue-color-hover;
+    }
+    &:focus {
+        background-color: $blue-color-hover;
+    }
 }
