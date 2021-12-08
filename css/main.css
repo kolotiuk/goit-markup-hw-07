@@ -649,6 +649,7 @@ ul {
 .checkbox__label {
   font-size: 14px;
   line-height: 1.71;
+  color: #757575;
 }
 
 .checkbox__label a {
