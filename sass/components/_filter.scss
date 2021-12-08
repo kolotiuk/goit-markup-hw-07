@@ -2,11 +2,11 @@
 .filter {
     display: flex;
     justify-content: center;
-    margin: -8px;
+    margin: -4px;
     margin-bottom: 50px;
 }
 .filter__btn {
-    margin: 8px;
+    margin: 4px;
     padding: 6px 22px;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -20,8 +20,7 @@
         background-color 250ms $cubic-bezier,
         box-shadow 250ms $cubic-bezier;
 }
-.filter__btn:hover,
-.filter__btn:focus {
+.filter__btn {
     &:hover,
     &:focus {
         color: $primary-white-color;
